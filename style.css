@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: url('image/fete.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    animation: slide-in 1.5s ease-in-out;
+  }
+
+  .hero h1 {
+    animation: fade-in-down 1s ease-out;
+  }
+
+  .hero p {
+    animation: fade-in-up 1.5s ease-out;
+  }
+
+  .hero .btn {
+    animation: zoom-in 2s ease-in-out infinite alternate;
+  }
+
+  /* Section Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  /* Card Effects */
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card img {
+    border-radius: 10px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  footer a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Keyframes for Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes zoom-in {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+
